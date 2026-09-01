@@ -1,0 +1,12 @@
+node_modules
+dist
+portable
+.vite
+*.local
+.DS_Store
+coverage
+playwright-report
+
+# 本地生成的发布包
+中华恐龙考察队（6岁男童益智小游戏）/
+中华恐龙考察队（6岁男童益智小游戏）.zip
