@@ -46,10 +46,10 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw,value=main
-            type=raw,value=latest
-            type=raw,value=1.0.0-nginx1.31.4-alpine3.24-slim
-            type=sha,prefix=sha-,format=short
+            type=raw,value=1.0.0-nginx1.31.4-alpine3.24-slim,priority=1000
+            type=raw,value=main,priority=900
+            type=raw,value=latest,priority=800
+            type=sha,prefix=sha-,format=short,priority=100
           labels: |
             org.opencontainers.image.title=中华恐龙考察队
             org.opencontainers.image.description=中华恐龙考察队 Nginx 静态生产镜像
